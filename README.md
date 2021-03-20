@@ -1,8 +1,8 @@
 # This is a training project for learning React JS
 
 This project contains five projects for learning React JS \
-More detailed: https://youtu.be/roumzWd4XJU \
-Thanks for the ideas, Andy Sterkowitz
+More detailed: [5 Javascript Projects to Build (For Beginners)](https://youtu.be/roumzWd4XJU) \
+Thanks for the ideas, [Andy Sterkowitz](https://www.youtube.com/channel/UCZ9qFEC82qM6Pk-54Q4TVWA)
 
 ## Available Scripts
 
