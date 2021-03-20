@@ -1,0 +1,95 @@
+.todoFormContainer {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.todoForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputTask {
+    height: 40px;
+    width: 390px;
+    font-size: 1.7rem;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 10px 0 0 10px;
+}
+
+.addTask {
+    width: 40px;
+    height: 40px;
+    padding: 0.2rem;
+    background: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+    outline: none;
+}
+
+.addTask:active {
+    border: 1px solid black;
+}
+
+.addBtnIcon {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.todoList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.task {
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    margin-bottom: 25px;
+}
+
+.taskName {
+    display: flex;
+    align-items: flex-end;
+    overflow-x: hidden;
+    width: 80%;
+    flex: 1;
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+}
+
+.cdTask {
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    margin-bottom: 8px;
+}
+
+.cdTask:active {
+    border: 1px solid black;
+}
+
+.cdBtnIcon {
+    width: 30px;
+    height: 30px;
+}
+
+@media(max-width:500px) {
+    .inputTask {
+        width: 330px;
+        font-size: 1.3rem;
+    }
+}

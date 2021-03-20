@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.appName {
+    margin: 10px 0px;
+    font-size: 100px;
+    font-weight: 500;
+}
+
+@media(max-width:500px) {
+    .appName {
+        font-size: 75px;
+    }
+}
