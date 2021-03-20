@@ -1,7 +1,7 @@
 # This is a training project for learning React JS
 
-This project contains five projects for learning React JS
-More detailed: https://youtu.be/roumzWd4XJU
+This project contains five projects for learning React JS \
+More detailed: https://youtu.be/roumzWd4XJU \
 Thanks for the ideas, Andy Sterkowitz
 
 ## Available Scripts
