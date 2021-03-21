@@ -8,11 +8,13 @@ const Todo = (props) => {
   };
   const addTask= (event) => {
     event.preventDefault();
+    if (props.inputTask.replace(/[\s.,%]/g, '') !== "") {
     props.setTasks([
       ...props.tasks,
       { text: props.inputTask, id: Math.random() * 1000 },
     ]);
     props.setInputTask("");
+}
   };
   return (
     <div>
