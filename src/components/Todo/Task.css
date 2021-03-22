@@ -29,6 +29,10 @@
     margin-bottom: 8px;
 }
 
+.taskCompleted {
+    text-decoration: line-through;
+}
+
 .cdTask:active {
     border: 1px solid black;
 }

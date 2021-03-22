@@ -6,15 +6,15 @@ const Todo = (props) => {
   const inputTaskHandler = (event) => {
     props.setInputTask(event.target.value);
   };
-  const addTask= (event) => {
+  const addTask = (event) => {
     event.preventDefault();
-    if (props.inputTask.replace(/[\s.,%]/g, '') !== "") {
-    props.setTasks([
-      ...props.tasks,
-      { text: props.inputTask, id: Math.random() * 1000 },
-    ]);
-    props.setInputTask("");
-}
+    if (props.inputTask.replace(/[\s.,%]/g, "") !== "") {
+      props.setTasks([
+        ...props.tasks,
+        { text: props.inputTask, id: Math.random() * 1000, completed: false },
+      ]);
+      props.setInputTask("");
+    }
   };
   return (
     <div>
@@ -34,11 +34,16 @@ const Todo = (props) => {
         </form>
       </div>
       <div className="todoList">
-          {
-              props.tasks.map(task =>(
-                  <Task setTasks={props.setTasks} tasks={props.tasks} task={task} key={task.id} taskName={task.text}/>
-              ))
-          }
+        {props.tasks.map((task) => (
+          <Task
+            setTasks={props.setTasks}
+            tasks={props.tasks}
+            task={task}
+            key={task.id}
+            taskName={task.text}
+            completed={task.completed}
+          />
+        ))}
       </div>
     </div>
   );
