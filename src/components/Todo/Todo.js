@@ -36,7 +36,7 @@ const Todo = (props) => {
       <div className="todoList">
           {
               props.tasks.map(task =>(
-                  <Task key={task.id} task={task.text}/>
+                  <Task setTasks={props.setTasks} tasks={props.tasks} task={task} key={task.id} taskName={task.text}/>
               ))
           }
       </div>

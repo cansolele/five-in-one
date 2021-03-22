@@ -5,15 +5,18 @@ import {
   } from "react-icons/ai";
 import './Task.css'
 const Task = (props) => {
+  const removeTask = () =>{
+     props.setTasks(props.tasks.filter(e => e.id !== props.task.id));
+  }
   return (
     <div className="task">
-      <div className="taskName">{props.task}</div>
+      <div className="taskName">{props.taskName}</div>
       <button className="cdTask">
         <IconContext.Provider value={{ className: "cdBtnIcon" }}>
           <AiOutlineCheck />
         </IconContext.Provider>
       </button>
-      <button className="cdTask">
+      <button onClick={removeTask} className="cdTask">
         <IconContext.Provider value={{ className: "cdBtnIcon" }}>
           <AiFillDelete />
         </IconContext.Provider>
