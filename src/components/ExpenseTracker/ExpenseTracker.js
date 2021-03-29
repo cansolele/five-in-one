@@ -1,7 +1,10 @@
+import s from"./ExpenseTracker.module.css";
 const ExpenseTracker = () =>{
     return(
         <div>
-            EXPENSE TRACKER
+            <div className={s.ETFormContainer}>
+            <h1 className={s.appName}>Expense Tracker</h1>
+            </div>
         </div>
     )
 }

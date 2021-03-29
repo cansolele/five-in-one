@@ -1,0 +1,43 @@
+.task {
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid black;
+    margin-bottom: 25px;
+}
+
+.taskName {
+    display: flex;
+    align-items: flex-end;
+    overflow-x: hidden;
+    width: 80%;
+    flex: 1;
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+}
+
+.cdTask {
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    margin-bottom: 8px;
+}
+
+.taskCompleted {
+    text-decoration: line-through;
+}
+
+.cdTask:active {
+    border: 1px solid black;
+}
+
+.cdBtnIcon {
+    width: 30px;
+    height: 30px;
+}

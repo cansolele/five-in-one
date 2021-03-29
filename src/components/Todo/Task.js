@@ -1,6 +1,6 @@
 import { IconContext } from "react-icons";
 import { AiOutlineCheck, AiFillDelete } from "react-icons/ai";
-import "./Task.css";
+import s from"./Task.module.css";
 const Task = (props) => {
   const removeTask = () => {
     props.setTasks(props.tasks.filter((e) => e.id !== props.task.id));
@@ -19,19 +19,19 @@ const Task = (props) => {
     );
   };
   return (
-    <div className="task">
+    <div className={s.task}>
       <div
-        className={`taskName ${props.task.completed ? "taskCompleted" : ""}`}
+        className={`${s.taskName} ${props.task.completed ? s.taskCompleted : ""}`}
       >
         {props.taskName}
       </div>
-      <button onClick={completeTask} className="cdTask">
-        <IconContext.Provider value={{ className: "cdBtnIcon" }}>
+      <button onClick={completeTask} className={s.cdTask}>
+        <IconContext.Provider value={{ className: s.cdBtnIcon }}>
           <AiOutlineCheck />
         </IconContext.Provider>
       </button>
-      <button onClick={removeTask} className="cdTask">
-        <IconContext.Provider value={{ className: "cdBtnIcon" }}>
+      <button onClick={removeTask} className={s.cdTask}>
+        <IconContext.Provider value={{ className: s.cdBtnIcon }}>
           <AiFillDelete />
         </IconContext.Provider>
       </button>

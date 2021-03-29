@@ -1,0 +1,13 @@
+.ETFormContainer {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.appName {
+    margin: 10px 0px;
+    font-size: 80px;
+    font-weight: 500;
+}

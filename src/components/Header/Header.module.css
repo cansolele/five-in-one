@@ -1,0 +1,15 @@
+.nav {
+    margin: 10px auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+nav a {
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}

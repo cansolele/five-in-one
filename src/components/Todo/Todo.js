@@ -1,7 +1,7 @@
 import { IconContext } from "react-icons";
 import { AiOutlinePlusCircle } from "react-icons/ai";
 import Task from "./Task";
-import "./Todo.css";
+import s from "./Todo.module.css";
 const Todo = (props) => {
   const inputTaskHandler = (event) => {
     props.setInputTask(event.target.value);
@@ -18,23 +18,23 @@ const Todo = (props) => {
   };
   return (
     <div>
-      <div className="todoFormContainer">
-      <h1 className="appName">Todo list</h1>
-        <form className="todoForm">
+      <div className={s.todoFormContainer}>
+        <h1 className={s.appName}>Todo list</h1>
+        <form className={s.todoForm}>
           <input
             value={props.inputTask}
             onChange={inputTaskHandler}
             type="text"
-            className="inputTask"
+            className={s.inputTask}
           />
-          <button onClick={addTask} type="submit" className="addTask">
-            <IconContext.Provider value={{ className: "addBtnIcon" }}>
+          <button onClick={addTask} type="submit" className={s.addTask}>
+            <IconContext.Provider value={{ className: s.addBtnIcon }}>
               <AiOutlinePlusCircle />
             </IconContext.Provider>
           </button>
         </form>
       </div>
-      <div className="todoList">
+      <div className={s.todoList}>
         {props.tasks.map((task) => (
           <Task
             setTasks={props.setTasks}
