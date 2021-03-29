@@ -2,6 +2,14 @@
     margin-top: 25px;
     display: flex;
     justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.appName {
+    margin: 10px 0px;
+    font-size: 100px;
+    font-weight: 500;
 }
 
 .todoForm {
@@ -52,5 +60,8 @@
     .inputTask {
         width: 330px;
         font-size: 1.3rem;
+    }
+    .appName {
+        font-size: 75px;
     }
 }

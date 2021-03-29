@@ -19,6 +19,7 @@ const Todo = (props) => {
   return (
     <div>
       <div className="todoFormContainer">
+      <h1 className="appName">Todo list</h1>
         <form className="todoForm">
           <input
             value={props.inputTask}

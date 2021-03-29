@@ -2,16 +2,22 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
-.appName {
-    margin: 10px 0px;
-    font-size: 100px;
-    font-weight: 500;
+.nav {
+    margin: 10px auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
 }
 
-@media(max-width:500px) {
-    .appName {
-        font-size: 75px;
-    }
+nav a {
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }
