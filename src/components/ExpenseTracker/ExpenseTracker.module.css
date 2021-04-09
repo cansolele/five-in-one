@@ -11,3 +11,56 @@
     font-size: 80px;
     font-weight: 500;
 }
+
+.etForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.inputContainer {
+    display: flex;
+    width: 225px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.input {
+    border: none;
+    outline: none;
+}
+
+.addItem {
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background: transparent;
+}
+
+.addItem:active {
+    border: 1px solid black;
+}
+
+.addBtnIcon {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+@media (max-width: 900px) {
+    .appName {
+        font-size: 60px;
+    }
+    .inputContainer {
+        width: 250px;
+    }
+}
+
+@media (max-width: 500px) {
+    .appName {
+        font-size: 55px;
+    }
+}

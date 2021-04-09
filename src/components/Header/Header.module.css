@@ -7,9 +7,17 @@
 }
 
 nav a {
+    text-align: center;
+    align-self: center;
     color: black;
     font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
     margin-bottom: 10px;
+}
+
+@media(max-width:710px) {
+    nav a {
+        font-size: 13px;
+    }
 }
