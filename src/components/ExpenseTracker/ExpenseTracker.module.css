@@ -32,7 +32,7 @@
     outline: none;
 }
 
-.addItem {
+.addExpens {
     width: 30px;
     height: 30px;
     border: none;
@@ -41,13 +41,31 @@
     background: transparent;
 }
 
-.addItem:active {
+.addExpens:active {
     border: 1px solid black;
 }
 
 .addBtnIcon {
     min-width: 100%;
     min-height: 100%;
+}
+
+table {
+    max-width: 70%;
+    width: 70%;
+    margin: 25px auto;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th {
+    font-weight: normal;
+    border-bottom: 2px solid black;
+    padding: 10px 8px;
+}
+
+td {
+    padding: 9px 8px;
 }
 
 @media (max-width: 900px) {

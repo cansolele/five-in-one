@@ -7,6 +7,10 @@ import ExpenseTracker from "./components/ExpenseTracker/ExpenseTracker";
 const App = () => {
   const [inputTask, setInputTask] = useState("");
   const [tasks, setTasks] = useState([]);
+  const [inputExpensName, setInputExpensName] = useState("");
+  const [inputExpensPrice, setInputExpensPrice] = useState("");
+  const [inputExpensDate, setInputExpensDate] = useState("");
+  const [Expens, setExpens] = useState([]);
   return (
     <Router>
       <div>
@@ -21,7 +25,16 @@ const App = () => {
             />
           </Route>
           <Route exact path="/ExpenseTracker">
-            <ExpenseTracker />
+            <ExpenseTracker
+              inputExpensName={inputExpensName}
+              setInputExpensName={setInputExpensName}
+              inputExpensPrice={inputExpensPrice}
+              setInputExpensPrice={setInputExpensPrice}
+              inputExpensDate={inputExpensDate}
+              setInputExpensDate={setInputExpensDate}
+              Expens={Expens}
+              setExpens={setExpens}
+            />
           </Route>
         </Switch>
       </div>
