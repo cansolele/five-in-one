@@ -15,6 +15,23 @@ const ExpenseTracker = (props) => {
 
   const addExpens = (event) => {
     event.preventDefault();
+    if (
+      props.inputExpensName.replace(/[\s.,%]/g, "") &&
+      props.inputExpensPrice.replace(/[\s.,%]/g, "") !== ""
+    ) {
+      props.setExpens([
+        ...props.Expens,
+        {
+          name: props.inputExpensName,
+          price: props.inputExpensPrice,
+          date: props.inputExpensDate,
+          id: Math.random() * 1000,
+        },
+      ]);
+      props.setInputExpensName("");
+      props.setInputExpensPrice("");
+      props.setInputExpensDate("");
+    }
   };
   return (
     <div>
@@ -31,7 +48,7 @@ const ExpenseTracker = (props) => {
             />
           </div>
           <div className={s.inputContainer}>
-            <p>Price:</p>
+            <p>Price($): </p>
             <input
               type="number"
               value={props.inputExpensPrice}
@@ -65,11 +82,13 @@ const ExpenseTracker = (props) => {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>Phone</td>
-              <td>20$</td>
-              <td>20.02.2001</td>
-            </tr>
+            {props.Expens.map((expen) => (
+              <tr key={expen.id}>
+                <td>{expen.name}</td>
+                <td>{expen.price + " $"}</td>
+                <td>{expen.date}</td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>
