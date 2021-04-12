@@ -17,10 +17,11 @@ const ExpenseTracker = (props) => {
     event.preventDefault();
     if (
       props.inputExpensName.replace(/[\s.,%]/g, "") &&
-      props.inputExpensPrice.replace(/[\s.,%]/g, "") !== ""
+      props.inputExpensPrice.replace(/[\s.,%]/g, "") !== "" &&
+      props.inputExpensPrice >= 0
     ) {
       props.setExpens([
-        ...props.Expens,
+        ...props.expens,
         {
           name: props.inputExpensName,
           price: props.inputExpensPrice,
@@ -51,6 +52,7 @@ const ExpenseTracker = (props) => {
             <p>Price($): </p>
             <input
               type="number"
+              min="0"
               value={props.inputExpensPrice}
               onChange={inputExpensPriceHandler}
               className={s.input}
@@ -82,7 +84,7 @@ const ExpenseTracker = (props) => {
             </tr>
           </thead>
           <tbody>
-            {props.Expens.map((expen) => (
+            {props.expens.map((expen) => (
               <tr key={expen.id}>
                 <td>{expen.name}</td>
                 <td>{expen.price + " $"}</td>

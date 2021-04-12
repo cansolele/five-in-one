@@ -1,6 +1,6 @@
 import "./App.css";
 import { useState } from "react";
-import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Todo from "./components/Todo/Todo";
 import ExpenseTracker from "./components/ExpenseTracker/ExpenseTracker";
@@ -10,13 +10,13 @@ const App = () => {
   const [inputExpensName, setInputExpensName] = useState("");
   const [inputExpensPrice, setInputExpensPrice] = useState("");
   const [inputExpensDate, setInputExpensDate] = useState("");
-  const [Expens, setExpens] = useState([]);
+  const [expens, setExpens] = useState([]);
   return (
     <Router>
       <div>
         <Header />
         <Switch>
-          <Route exact path="/Todo">
+          <Route exact path="/todo">
             <Todo
               setInputTask={setInputTask}
               inputTask={inputTask}
@@ -24,7 +24,7 @@ const App = () => {
               setTasks={setTasks}
             />
           </Route>
-          <Route exact path="/ExpenseTracker">
+          <Route exact path="/expense-tracker">
             <ExpenseTracker
               inputExpensName={inputExpensName}
               setInputExpensName={setInputExpensName}
@@ -32,7 +32,7 @@ const App = () => {
               setInputExpensPrice={setInputExpensPrice}
               inputExpensDate={inputExpensDate}
               setInputExpensDate={setInputExpensDate}
-              Expens={Expens}
+              expens={expens}
               setExpens={setExpens}
             />
           </Route>

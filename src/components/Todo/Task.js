@@ -1,6 +1,6 @@
 import { IconContext } from "react-icons";
 import { AiOutlineCheck, AiFillDelete } from "react-icons/ai";
-import s from"./Task.module.css";
+import s from "./Task.module.css";
 const Task = (props) => {
   const removeTask = () => {
     props.setTasks(props.tasks.filter((e) => e.id !== props.task.id));
@@ -21,7 +21,9 @@ const Task = (props) => {
   return (
     <div className={s.task}>
       <div
-        className={`${s.taskName} ${props.task.completed ? s.taskCompleted : ""}`}
+        className={`${s.taskName} ${
+          props.task.completed ? s.taskCompleted : ""
+        }`}
       >
         {props.taskName}
       </div>
