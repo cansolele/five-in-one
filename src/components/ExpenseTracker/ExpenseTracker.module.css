@@ -41,13 +41,33 @@
     background: transparent;
 }
 
+.remove_btn {
+    width: 25px;
+    height: 25px;
+    border: none;
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
 .addExpens:active {
+    border: 1px solid black;
+}
+
+.remove_btn:active {
     border: 1px solid black;
 }
 
 .addBtnIcon {
     min-width: 100%;
     min-height: 100%;
+}
+
+.remove_btn_icon {
+    min-width: 100%;
+    min-height: 100%;
+    color: brown;
 }
 
 table {
@@ -59,7 +79,7 @@ table {
 }
 
 th {
-    font-weight: normal;
+    font-size: 25px;
     border-bottom: 2px solid black;
     padding: 10px 8px;
 }

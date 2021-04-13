@@ -1,6 +1,7 @@
 import s from "./ExpenseTracker.module.css";
 import { IconContext } from "react-icons";
 import { ImPlus } from "react-icons/im";
+import { CgRemove } from "react-icons/cg";
 
 const ExpenseTracker = (props) => {
   const inputExpensNameHandler = (event) => {
@@ -33,6 +34,9 @@ const ExpenseTracker = (props) => {
       props.setInputExpensPrice("");
       props.setInputExpensDate("");
     }
+  };
+  const removeExpens = (id) => {
+    props.setExpens(props.expens.filter((e) => e.id !== id));
   };
   return (
     <div>
@@ -89,6 +93,18 @@ const ExpenseTracker = (props) => {
                 <td>{expen.name}</td>
                 <td>{expen.price + " $"}</td>
                 <td>{expen.date}</td>
+                <td>
+                  <button
+                    onClick={() => removeExpens(expen.id)}
+                    className={s.remove_btn}
+                  >
+                    <IconContext.Provider
+                      value={{ className: s.remove_btn_icon }}
+                    >
+                      <CgRemove />
+                    </IconContext.Provider>
+                  </button>
+                </td>
               </tr>
             ))}
           </tbody>
