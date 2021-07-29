@@ -1,0 +1,103 @@
+.note_taker_container {
+  margin-top: 25px;
+  text-align: center;
+}
+.appName {
+  margin: 10px 0px;
+  font-size: 100px;
+  font-weight: 500;
+}
+.ntForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.inputNote {
+  font-size: 15px;
+  outline: none;
+  resize: none;
+}
+.addNote {
+  margin-top: 10px;
+  width: 35px;
+  height: 35px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background: transparent;
+}
+.addNote:active {
+  border: 1px solid black;
+}
+.addNoteIcon {
+  min-width: 100%;
+  min-height: 100%;
+}
+.notesContainer {
+  max-width: 70%;
+  margin: 25px auto;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+}
+.noteContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 125px;
+  border: 2px solid black;
+}
+
+.noteText {
+  padding: 0 5px;
+  text-align: left;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+.noteBtnsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.noteBtnView {
+  width: 100%;
+  margin: 5px;
+  padding: 5px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid rgb(26, 6, 78);
+  background-color: rgb(95, 121, 233);
+}
+.noteBtnView:hover {
+  background-color: rgb(74, 93, 177);
+  transition: background-color 0.1s linear;
+}
+.noteBtnView:active {
+  border: 2px solid rgb(26, 6, 78);
+}
+.noteBtnDel {
+  margin: 5px;
+  padding: 5px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid rgb(107, 20, 20);
+  background-color: red;
+}
+.noteBtnDel:hover {
+  background-color: rgb(167, 40, 40);
+  transition: background-color 0.1s linear;
+}
+.noteBtnDel:active {
+  border: 2px solid rgb(107, 20, 20);
+}

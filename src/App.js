@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Todo from "./components/Todo/Todo";
 import ExpenseTracker from "./components/ExpenseTracker/ExpenseTracker";
+import NoteTaker from "./components/NoteTaker/NoteTaker";
 const App = () => {
   const [inputTask, setInputTask] = useState("");
   const [tasks, setTasks] = useState([]);
@@ -35,6 +36,9 @@ const App = () => {
               expens={expens}
               setExpens={setExpens}
             />
+          </Route>
+          <Route exact path="/note-taker">
+            <NoteTaker />
           </Route>
         </Switch>
       </div>
