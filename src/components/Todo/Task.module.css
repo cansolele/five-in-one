@@ -34,7 +34,7 @@
 }
 
 .cdTask:active {
-    border: 1px solid black;
+    border: 1px solid transparent;
 }
 
 .cdBtnIcon {

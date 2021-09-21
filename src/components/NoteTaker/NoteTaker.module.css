@@ -28,12 +28,14 @@
   outline: none;
   background: transparent;
 }
-.addNote:active {
-  border: 1px solid black;
-}
+
 .addNoteIcon {
   min-width: 100%;
   min-height: 100%;
+}
+.addNoteIcon:active {
+  min-width: 85%;
+  min-height: 85%;
 }
 .notesContainer {
   max-width: 70%;
@@ -74,15 +76,14 @@
   border: none;
   cursor: pointer;
   outline: none;
-  border: 1px solid rgb(26, 6, 78);
-  background-color: rgb(95, 121, 233);
+  background: rgb(30, 84, 202);
+  transition: 0.2s;
 }
 .noteBtnView:hover {
-  background-color: rgb(74, 93, 177);
-  transition: background-color 0.1s linear;
+  background: rgb(53, 64, 167);
 }
 .noteBtnView:active {
-  border: 2px solid rgb(26, 6, 78);
+  background: rgb(35, 33, 147);
 }
 .noteBtnDel {
   margin: 5px;
@@ -91,13 +92,12 @@
   border: none;
   cursor: pointer;
   outline: none;
-  border: 1px solid rgb(107, 20, 20);
-  background-color: red;
+  background: red;
+  transition: 0.2s;
 }
 .noteBtnDel:hover {
-  background-color: rgb(167, 40, 40);
-  transition: background-color 0.1s linear;
+  background: rgb(130, 15, 15);
 }
 .noteBtnDel:active {
-  border: 2px solid rgb(107, 20, 20);
+  background: rgb(105, 12, 12);
 }

@@ -1,104 +1,107 @@
 .ETFormContainer {
-    margin-top: 25px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
 }
 
 .appName {
-    margin: 10px 0px;
-    font-size: 80px;
-    font-weight: 500;
+  margin: 10px 0px;
+  font-size: 80px;
+  font-weight: 500;
 }
 
 .etForm {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .inputContainer {
-    display: flex;
-    width: 225px;
-    justify-content: space-between;
-    margin-bottom: 10px;
+  display: flex;
+  width: 225px;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .input {
-    border: none;
-    outline: none;
+  border: none;
+  outline: none;
 }
 
 .addExpens {
-    width: 30px;
-    height: 30px;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    background: transparent;
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background: transparent;
 }
 
 .remove_btn {
-    width: 25px;
-    height: 25px;
-    border: none;
-    background: transparent;
-    outline: none;
-    border: none;
-    cursor: pointer;
+  width: 25px;
+  height: 25px;
+  border: none;
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  float: right;
 }
 
-.addExpens:active {
-    border: 1px solid black;
-}
-
-.remove_btn:active {
-    border: 1px solid black;
+.remove_btn_icon:active {
+  min-width: 85%;
+  min-height: 85%;
 }
 
 .addBtnIcon {
-    min-width: 100%;
-    min-height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+}
+.addBtnIcon:active {
+  min-width: 85%;
+  min-height: 85%;
 }
 
 .remove_btn_icon {
-    min-width: 100%;
-    min-height: 100%;
-    color: brown;
+  min-width: 100%;
+  min-height: 100%;
+  color: brown;
 }
 
 table {
-    max-width: 70%;
-    width: 70%;
-    margin: 25px auto;
-    border-collapse: collapse;
-    text-align: left;
+  max-width: 70%;
+  width: 70%;
+  margin: 25px auto;
+  border-collapse: collapse;
+  text-align: left;
 }
 
 th {
-    font-size: 25px;
-    border-bottom: 2px solid black;
-    padding: 10px 8px;
+  font-size: 25px;
+  border-bottom: 2px solid black;
+  padding: 10px 8px;
 }
 
 td {
-    padding: 9px 8px;
+  width: 0px;
+  padding: 9px 8px;
 }
 
 @media (max-width: 900px) {
-    .appName {
-        font-size: 60px;
-    }
-    .inputContainer {
-        width: 250px;
-    }
+  .appName {
+    font-size: 60px;
+  }
+  .inputContainer {
+    width: 250px;
+  }
 }
 
 @media (max-width: 500px) {
-    .appName {
-        font-size: 55px;
-    }
+  .appName {
+    font-size: 55px;
+  }
 }

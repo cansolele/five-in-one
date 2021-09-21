@@ -1,23 +1,26 @@
 .nav {
-    margin: 10px auto;
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid black;
+  margin: 10px auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
 }
 
 nav a {
-    text-align: center;
-    align-self: center;
-    color: black;
-    font-weight: 700;
-    text-decoration: none;
-    text-transform: uppercase;
-    margin-bottom: 10px;
+  text-align: center;
+  align-self: center;
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+nav a:hover {
+  color: rgb(10, 10, 80);
 }
 
-@media(max-width:710px) {
-    nav a {
-        font-size: 13px;
-    }
+@media (max-width: 710px) {
+  nav a {
+    font-size: 13px;
+  }
 }

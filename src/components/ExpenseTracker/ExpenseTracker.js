@@ -92,8 +92,8 @@ const ExpenseTracker = (props) => {
               <tr key={expen.id}>
                 <td>{expen.name}</td>
                 <td>{expen.price + " $"}</td>
-                <td>{expen.date}</td>
                 <td>
+                  {expen.date}{" "}
                   <button
                     onClick={() => removeExpens(expen.id)}
                     className={s.remove_btn}
@@ -103,7 +103,7 @@ const ExpenseTracker = (props) => {
                     >
                       <CgRemove />
                     </IconContext.Provider>
-                  </button>
+                  </button>{" "}
                 </td>
               </tr>
             ))}
