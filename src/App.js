@@ -12,6 +12,8 @@ const App = () => {
   const [inputExpensPrice, setInputExpensPrice] = useState("");
   const [inputExpensDate, setInputExpensDate] = useState("");
   const [expens, setExpens] = useState([]);
+  const [inputNote, setInputNote] = useState("");
+  const [notes, setNotes] = useState([]);
   return (
     <Router>
       <div>
@@ -38,7 +40,12 @@ const App = () => {
             />
           </Route>
           <Route exact path="/note-taker">
-            <NoteTaker />
+            <NoteTaker
+              inputNote={inputNote}
+              setInputNote={setInputNote}
+              notes={notes}
+              setNotes={setNotes}
+            />
           </Route>
         </Switch>
       </div>
