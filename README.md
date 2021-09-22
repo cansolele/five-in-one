@@ -2,7 +2,7 @@
 
 This project contains five projects for learning React JS \
 More detailed: [5 Javascript Projects to Build (For Beginners)](https://youtu.be/roumzWd4XJU) \
-Thanks for the ideas, [Andy Sterkowitz](https://www.youtube.com/channel/UCZ9qFEC82qM6Pk-54Q4TVWA)
+Thanks for the ideas, [Andy Sterkowitz] (https://www.youtube.com/channel/UCZ9qFEC82qM6Pk-54Q4TVWA)
 
 ## Available Scripts
 
