@@ -14,6 +14,7 @@ const App = () => {
   const [expens, setExpens] = useState([]);
   const [inputNote, setInputNote] = useState("");
   const [notes, setNotes] = useState([]);
+  const [modalWindow, setModalWindow] = useState([]);
   return (
     <Router>
       <div>
@@ -45,6 +46,8 @@ const App = () => {
               setInputNote={setInputNote}
               notes={notes}
               setNotes={setNotes}
+              modalWindow={modalWindow}
+              setModalWindow={setModalWindow}
             />
           </Route>
         </Switch>

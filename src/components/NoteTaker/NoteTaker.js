@@ -1,6 +1,6 @@
 import s from "./NoteTaker.module.css";
 import { IconContext } from "react-icons";
-import { ImPlus } from "react-icons/im";
+import { ImPlus, ImCancelCircle } from "react-icons/im";
 import Note from "./Note";
 const NoteTaker = (props) => {
   const addNote = (event) => {
@@ -21,6 +21,30 @@ const NoteTaker = (props) => {
   };
   return (
     <div className={s.note_taker_container}>
+      <div
+        className={`${s.modalContainer} ${
+          props.modalWindow.modalActive ? s.modalActive : ""
+        }`}
+      >
+        <div className={s.modalWindow}>
+          <div className={s.btnCancelContainer}>
+            <button
+              className={s.cancelModalBtn}
+              onClick={() =>
+                props.setModalWindow({
+                  text: "",
+                  modalActive: false,
+                })
+              }
+            >
+              <IconContext.Provider value={{ className: s.cancelModalBtnIcon }}>
+                <ImCancelCircle />
+              </IconContext.Provider>
+            </button>
+          </div>
+          <div className={s.textModal}>{props.modalWindow.text}</div>
+        </div>
+      </div>
       <h1 className={s.appName}>Note taker</h1>
       <form className={s.ntForm}>
         <textarea
@@ -45,6 +69,7 @@ const NoteTaker = (props) => {
             note={note}
             key={note.id}
             noteText={note.text}
+            setModalWindow={props.setModalWindow}
           />
         ))}
       </div>

@@ -2,6 +2,35 @@
   margin-top: 25px;
   text-align: center;
 }
+.modalContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+  opacity: 0;
+}
+.modalActive {
+  opacity: 1;
+  pointer-events: all;
+}
+.modalWindow {
+  display: flex;
+  flex-direction: column;
+  min-width: 250px;
+  max-width: 700px;
+  max-height: 80vh;
+  overflow: auto;
+  background-color: white;
+  border: 3px solid #121614;
+  position: relative;
+}
+
 .appName {
   margin: 10px 0px;
   font-size: 100px;
@@ -15,6 +44,7 @@
   justify-content: space-between;
 }
 .inputNote {
+  border: 2px solid #121614;
   font-size: 15px;
   outline: none;
   resize: none;
@@ -32,6 +62,32 @@
 .addNoteIcon {
   min-width: 100%;
   min-height: 100%;
+}
+.btnCancelContainer {
+  height: 10%;
+}
+.textModal {
+  height: 80%;
+  padding: 5px;
+}
+.cancelModalBtn {
+  padding: 3px;
+  float: right;
+  width: 35px;
+  height: 35px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background: transparent;
+}
+.cancelModalBtnIcon {
+  min-width: 100%;
+  min-height: 100%;
+  color: red;
+}
+.cancelModalBtnIcon:active {
+  min-width: 85%;
+  min-height: 85%;
 }
 .addNoteIcon:active {
   min-width: 85%;

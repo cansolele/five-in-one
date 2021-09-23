@@ -10,7 +10,17 @@ const Note = (props) => {
       <h3>Note {props.notes.indexOf(props.note) + 1} </h3>
       <p className={s.noteText}>{props.noteText}</p>
       <div className={s.noteBtnsContainer}>
-        <button className={s.noteBtnView}>View</button>
+        <button
+          className={s.noteBtnView}
+          onClick={() =>
+            props.setModalWindow({
+              text: props.note.text,
+              modalActive: true,
+            })
+          }
+        >
+          View
+        </button>
         <button className={s.noteBtnDel} onClick={deleteNote}>
           Delete
         </button>

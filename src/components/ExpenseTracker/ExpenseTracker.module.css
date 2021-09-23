@@ -13,6 +13,7 @@
 }
 
 .etForm {
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,8 +23,9 @@
 
 .inputContainer {
   display: flex;
-  width: 225px;
+  width: 100%;
   justify-content: space-between;
+  margin-left: 5px;
   margin-bottom: 10px;
 }
 
