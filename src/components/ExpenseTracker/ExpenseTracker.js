@@ -41,7 +41,7 @@ const ExpenseTracker = (props) => {
   return (
     <div>
       <div className={s.ETFormContainer}>
-        <h1 className={s.appName}>Expense Tracker</h1>
+        <h1 className={s.appName}>Expense tracker</h1>
         <form className={s.etForm}>
           <div className={s.inputContainer}>
             <p>Name:</p>

@@ -18,6 +18,7 @@
 .modalActive {
   opacity: 1;
   pointer-events: all;
+  overflow: hidden;
 }
 .modalWindow {
   display: flex;
@@ -100,4 +101,19 @@
   grid-template-columns: repeat(3, 1fr);
   column-gap: 20px;
   row-gap: 20px;
+}
+@media (max-width: 525px) {
+  .appName {
+    font-size: 70px;
+  }
+  .inputNote {
+    max-width: 80%;
+  }
+  .notesContainer {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 90%;
+  }
+  .modalWindow {
+    width: 90%;
+  }
 }

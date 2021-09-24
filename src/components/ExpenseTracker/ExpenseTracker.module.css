@@ -106,4 +106,7 @@ td {
   .appName {
     font-size: 55px;
   }
+  th {
+    font-size: 20px;
+  }
 }

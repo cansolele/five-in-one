@@ -20,7 +20,7 @@ const VowelCounter = (props) => {
   };
   return (
     <div className={s.VowelCounterContainer}>
-      <h1 className={s.appName}>Vowel Counter</h1>
+      <h1 className={s.appName}>Vowel counter</h1>
       <form className={s.vcForm}>
         <textarea
           cols="50"

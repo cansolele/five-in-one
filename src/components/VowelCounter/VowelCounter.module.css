@@ -37,3 +37,11 @@
   min-width: 85%;
   min-height: 85%;
 }
+@media (max-width: 525px) {
+  .appName {
+    font-size: 50px;
+  }
+  .inputText {
+    max-width: 80%;
+  }
+}
