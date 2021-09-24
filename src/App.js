@@ -16,6 +16,7 @@ const App = () => {
   const [inputNote, setInputNote] = useState("");
   const [notes, setNotes] = useState([]);
   const [modalWindow, setModalWindow] = useState([]);
+  const [inputTextVC, setInputTextVc] = useState("");
   return (
     <Router>
       <div>
@@ -52,7 +53,10 @@ const App = () => {
             />
           </Route>
           <Route exact path="/vowel-counter">
-            <VowelCounter />
+            <VowelCounter
+              inputTextVC={inputTextVC}
+              setInputTextVC={setInputTextVc}
+            />
           </Route>
         </Switch>
       </div>
