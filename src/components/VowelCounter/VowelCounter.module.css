@@ -1,0 +1,39 @@
+.VowelCounterContainer {
+  margin-top: 25px;
+  text-align: center;
+}
+.appName {
+  margin: 10px 0px;
+  font-size: 80px;
+  font-weight: 500;
+}
+.vcForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.inputText {
+  border: 2px solid #121614;
+  font-size: 15px;
+  outline: none;
+  resize: none;
+}
+.checkBtn {
+  margin-top: 10px;
+  width: 35px;
+  height: 35px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background: transparent;
+}
+.checkBtnIcon {
+  min-width: 100%;
+  min-height: 100%;
+}
+.checkBtnIcon:active {
+  min-width: 85%;
+  min-height: 85%;
+}

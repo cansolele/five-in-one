@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 import Todo from "./components/Todo/Todo";
 import ExpenseTracker from "./components/ExpenseTracker/ExpenseTracker";
 import NoteTaker from "./components/NoteTaker/NoteTaker";
+import VowelCounter from "./components/VowelCounter/VowelCounter";
 const App = () => {
   const [inputTask, setInputTask] = useState("");
   const [tasks, setTasks] = useState([]);
@@ -49,6 +50,9 @@ const App = () => {
               modalWindow={modalWindow}
               setModalWindow={setModalWindow}
             />
+          </Route>
+          <Route exact path="/vowel-counter">
+            <VowelCounter />
           </Route>
         </Switch>
       </div>
